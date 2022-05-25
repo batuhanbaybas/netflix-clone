@@ -1,4 +1,4 @@
-## This is movie app
+## Netflix clone app
 
 ### Tech Stack
 
