@@ -17,6 +17,14 @@
 
     .row_posterlarge {
       max-height: 250px;
+      @extend %c-pointer;
+      transition: tranform 450ms;
+
+
+      &:hover {
+        transform: scale(1.1);
+        opacity: 1;
+      }
     }
 
     .row_poster {
@@ -24,6 +32,7 @@
       object-fit: contain;
       margin-right: 10px;
       width: 100%;
+      @extend %c-pointer;
       transition: tranform 450ms;
 
       &:hover {
