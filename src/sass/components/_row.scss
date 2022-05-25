@@ -1,0 +1,35 @@
+@import "../base/style";
+
+
+.row {
+  color: $primary-text-color;
+  margin-left: 20px;
+
+  .row_posters {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 20px;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .row_posterlarge {
+      max-height: 250px;
+    }
+
+    .row_poster {
+      max-height: 100px;
+      object-fit: contain;
+      margin-right: 10px;
+      width: 100%;
+      transition: tranform 450ms;
+
+      &:hover {
+        transform: scale(1.1);
+        opacity: 1;
+      }
+    }
+  }
+}

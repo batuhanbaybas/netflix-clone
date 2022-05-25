@@ -1,8 +1,21 @@
-const Banner = () => {
+import useFetch from "../../Hooks/FetchData/useFetch";
+import requests from "../../api/requests/requests";
+import {useEffect, useState} from "react";
+import useTrancate from "../../Hooks/Trancate/useTrancate";
 
-    const trancate = (text, n) => {
-        return text?.length > n ? text.substring(0, n - 1) + '...' : text;
-    };
+const Banner = () => {
+    const {resData, error, loading} = useFetch(requests.fetchNetflixOriginals);
+    const [banner, setBanner] = useState([]);
+    const {trancate} = useTrancate(banner?.overview, 150);
+
+    useEffect(() => {
+        setBannerMovie();
+    }, [resData]);
+    const setBannerMovie = () => {
+        const random = Math.floor(Math.random() * resData?.results.length - 1);
+
+        setBanner(resData?.results[random]);
+    }
 
 
     return (
@@ -10,15 +23,17 @@ const Banner = () => {
                 style={{
                     backgroundPosition: 'center center',
                     backgroundSize: 'cover',
-                    backgroundImage: `url("https://wallpapercave.com/wp/wp7123665.jpg")`
+                    backgroundImage: `url("https://image.tmdb.org/t/p/original/${banner?.backdrop_path}")`,
                 }}>
             <div className={"banner_content"}>
-                <div className={"banner_title"}>Movie Name</div>
+                <div className={"banner_title"}>
+                    {banner?.title || banner?.name || banner?.original_name}
+                </div>
                 <div className={"banner_buttons"}>
                     <button className={"banner_button"}>Play</button>
                     <button className={"banner_button"}>My List</button>
                 </div>
-                <h1 className={"banner_description"}>{trancate("Test Description", 150)}</h1>
+                <h1 className={"banner_description"}>{trancate}</h1>
             </div>
             <div className={"banner-fadebuttom"}/>
         </header>
