@@ -1,4 +1,3 @@
-import NavBar from "../../Components/NavBar/NavBar";
 import Banner from "../../Components/Banner/Banner";
 import Rows from "../../Components/Row/Row";
 import requests from "../../api/requests/requests";
@@ -6,12 +5,11 @@ import requests from "../../api/requests/requests";
 const HomePage = () => {
     return (
         <div>
-            <NavBar/>
             <Banner/>
             <Rows
                 title={"NETFLİX ORİGİNALS"}
                 fetchUrl={requests.fetchNetflixOriginals}
-                isLargeRow
+                isLargeRow={true}
             />
             <Rows
                 title={"Trending Now"}
