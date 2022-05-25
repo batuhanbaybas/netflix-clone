@@ -29,7 +29,22 @@
 
 .nav_avatar {
   @extend %p-fixed;
+  @extend %c-pointer;
   right: 20px;
   width: 30px;
   height: 30px;
+}
+
+.login_button {
+  @extend %p-fixed;
+  text-decoration: none;
+  right: 20px;
+  top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: $primary-text-color;
+  background-color: $netflix-color;
+  font-weight: 600;
+  border: none;
+  @extend %c-pointer;
 }
