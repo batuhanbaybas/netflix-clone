@@ -1,0 +1,10 @@
+@import "../base/style";
+
+.actor {
+  margin-right: 0.5rem;
+  .actor_name {
+    color: $primary-text-color;
+    margin-top: 0.3rem;
+    text-align: center;
+  }
+}

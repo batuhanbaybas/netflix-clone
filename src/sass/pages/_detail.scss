@@ -1,43 +1,44 @@
 @import "../base/style";
 
 
-.banner {
-  height: 448px;
+.detail {
+  height: 600px;
   @extend %banner;
 
 
-  .banner_content {
+  .detail_content {
     padding-top: 140px;
     margin-left: 30px;
     height: 190px;
 
-    .banner_title {
+    .detail_title {
       font-size: 3rem;
       font-weight: 800;
       padding-bottom: 0.3rem;
 
     }
 
-    .banner_buttons {
-      .banner_button {
+    .detail_buttons {
+      .detail_button {
         @extend %banner_button;
+        margin-top: 5rem;
       }
 
     }
 
-    .banner_description {
+    .detail_description {
       width: 45rem;
       line-height: 1.2;
-      padding-top: 1rem;
-      font-size: 0.8rem;
+      padding-top: 10rem;
+      font-size: 1rem;
       max-width: 360px;
       height: 80px;
     }
   }
 
 
-  .banner-fadebuttom {
-    height: 16.2rem;
+  .detail-fadebuttom {
+    height: 26rem;
     background-image: linear-gradient(
                     180deg,
                     transparent,
@@ -45,7 +46,24 @@
                     $primary-color
     );
   }
-
 }
 
+.detail_row {
+  margin-top: 7rem;
 
+  .detail_actor_poster {
+    @extend %poster_container;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
+
+.detail_trailer {
+  @extend %poster_container;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

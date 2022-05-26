@@ -8,6 +8,7 @@ import {auth} from "./Server/firebase";
 import {useEffect} from "react";
 import {setUser} from "./Redux/features/userSlice";
 import AuthRoutes from "./Routes/AuthRoutes/AuthRoutes";
+import DetailPage from "./Pages/Detail/DetailPage";
 
 function App() {
     const dispatch = useDispatch();
@@ -36,6 +37,7 @@ function App() {
                 </Route>
                 <Route element={<HomeRoutes/>}>
                     <Route path={"/"} element={<HomePage/>}/>
+                    <Route path={"/detail/:id"} element={<DetailPage/>}/>
                 </Route>
             </Routes>
         </div>

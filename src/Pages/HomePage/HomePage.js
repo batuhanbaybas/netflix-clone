@@ -7,13 +7,9 @@ const HomePage = () => {
         <div>
             <Banner/>
             <Rows
-                title={"NETFLİX ORİGİNALS"}
-                fetchUrl={requests.fetchNetflixOriginals}
-                isLargeRow={true}
-            />
-            <Rows
                 title={"Trending Now"}
                 fetchUrl={requests.fetchTrending}
+                isLargeRow={true}
             />
             <Rows
                 title={"Top Rated"}

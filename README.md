@@ -1,4 +1,11 @@
 ## Netflix clone app
+This is netflix clone app
+
+## Features
+- [x] Login
+- [x] Signup
+
+
 
 ### Tech Stack
 

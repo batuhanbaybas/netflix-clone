@@ -6,11 +6,7 @@
   margin-left: 20px;
 
   .row_posters {
-    display: flex;
-    overflow-y: hidden;
-    overflow-x: scroll;
-    padding: 20px;
-
+    @extend %poster_container;
     &::-webkit-scrollbar {
       display: none;
     }

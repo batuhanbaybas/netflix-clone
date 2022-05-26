@@ -29,7 +29,7 @@ const NavBar = () => {
                             src={"https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png?20201013161117"}
                             alt={'avatar'}
                             className={"nav_avatar"}/> :
-                        <Link className={"login_button"} to={"/login"}>Log In</Link>
+                        <div className={"login_button"}>Log In</div>
                 }
             </div>
 
