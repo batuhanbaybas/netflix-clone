@@ -2,7 +2,7 @@
 
 This is netflix clone app
 
-On Detail page you cab see all actors and trailers
+On Detail page you can see all actors and trailers
 
 You have to sign in or sign up to see the Home page
 
