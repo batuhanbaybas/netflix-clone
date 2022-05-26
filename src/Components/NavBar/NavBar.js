@@ -1,4 +1,4 @@
-import {Link} from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 import {useSelector} from "react-redux";
 import {selectUser} from "../../Redux/features/userSlice";
 import {auth} from "../../Server/firebase";
@@ -7,10 +7,15 @@ import useTransition from "../../Hooks/Transition/useTransition";
 const NavBar = () => {
     const user = useSelector(selectUser)
     const {show} = useTransition(window)
+    const navigate = useNavigate()
 
 
     const handleLogout = () => {
         auth.signOut()
+    }
+
+    const handleIndex = () => {
+        navigate("/")
     }
 
 
@@ -18,6 +23,7 @@ const NavBar = () => {
         <nav className={`nav ${show && "nav_black"}`}>
             <div className={"nav_content"}>
                 <img
+                    onClick={handleIndex}
                     src={"https://www.freepnglogos.com/uploads/netflix-logo-0.png"}
                     alt={'logo'}
                     className={"nav_logo"}

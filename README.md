@@ -8,6 +8,10 @@ You have to sign in or sign up to see the Home page
 
 if you are not sign in just press get started button
 
+For sign up just fill the form and press signup now button
+
+For sign out just press avatar right top corner
+
 ## Features
 
 - [x] Login

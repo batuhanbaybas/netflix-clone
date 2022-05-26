@@ -4,7 +4,7 @@ import {useEffect, useState} from "react";
 import useTrancate from "../../Hooks/Trancate/useTrancate";
 
 const Banner = () => {
-    const {resData, error, loading} = useFetch(requests.fetchNetflixOriginals);
+    const {resData} = useFetch(requests.fetchTrending);
     const [banner, setBanner] = useState([]);
     const {trancate} = useTrancate(banner?.overview, 150);
 
