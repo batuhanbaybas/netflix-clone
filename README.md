@@ -12,6 +12,10 @@ For sign up just fill the form and press signup now button
 
 For sign out just press avatar right top corner
 
+## Demo
+
+[Live](https://film-d2f62.web.app/)
+
 ## Features
 
 - [x] Login
