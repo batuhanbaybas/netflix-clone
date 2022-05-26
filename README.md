@@ -12,6 +12,7 @@ if you are not sign in just press get started button
 
 - [x] Login
 - [x] Signup
+- [x] Protected route
 
 ### Tech Stack
 
