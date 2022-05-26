@@ -18,6 +18,11 @@ For sign out just press avatar right top corner
 - [x] Signup
 - [x] Protected route
 
+## Screenshots
+
+<img src="public/Project_image/netflix_clone_home.png">
+<img src="public/Project_image/netflix_clone_detail.png">
+
 ### Tech Stack
 
 - [Redux](https://redux.js.org/)
