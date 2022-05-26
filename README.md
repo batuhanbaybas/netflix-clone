@@ -1,11 +1,17 @@
 ## Netflix clone app
+
 This is netflix clone app
 
+On Detail page you cab see all actors and trailers
+
+You have to sign in or sign up to see the Home page
+
+if you are not sign in just press get started button
+
 ## Features
+
 - [x] Login
 - [x] Signup
-
-
 
 ### Tech Stack
 
